@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ukr">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="../css/style.css">
+   <title>Завдання 1</title>
+</head>
+
+<body>
+   <main class="page">
+      <section class="block">
+         <div class="block__container">
+            <h1 class="block__title">Обов'язкове завдання 1</h1>
+            <div class="block__body">
+               <a href="../index.html" class="block__link">Повернутися до index.html</a>
+            </div>
+         </div>
+      </section>
+   </main>
+   <script>
+      let num1 = parseInt(prompt('Введіть перше число', 0));
+      let num2 = parseInt(prompt('Введіть друге число', 0));
+
+      let sum = num1 + num2;
+      let mult = num1 * num2;
+      let fract = num1 / num2;
+
+      document.write(`
+         <div class="block">
+            <div class="block__container">
+               <table class="table" border="2px">
+                  <tbody>
+                     <tr class="table__row">
+                        <th class="table__column">Шуканий результат</th>
+                        <th class="table__column">Отримане значення</th>
+                     </tr>
+                     <tr class="table__row">
+                        <th class="table__column">Сума</th>
+                        <td class="table__column">${sum}</td>
+                     </tr>
+                     <tr class="table__row">
+                        <th class="table__column">Добуток</th>
+                        <td class="table__column">${mult}</td>
+                     </tr>
+                     <tr class="table__row">
+                        <th class="table__column">Частка</th>
+                        <td class="table__column">${fract}</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+         </div>
+         `);
+   </script>
+</body>
+
+</html>

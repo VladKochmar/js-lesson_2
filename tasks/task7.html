@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ukr">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="../css/style.css">
+   <title>Завдання 7</title>
+</head>
+
+<body>
+   <main class="page">
+      <section class="block">
+         <div class="block__container">
+            <h1 class="block__title">Обов'язкове завдання 7</h1>
+            <div class="block__body">
+               <a href="../index.html" class="block__link">Повернутися до index.html</a>
+            </div>
+         </div>
+      </section>
+   </main>
+   <script>
+      let monthNumber = Math.floor((Math.random() * 12 - 1 + 1)) + 1;
+      let dayNumber = Math.floor(Math.random() * 7);
+
+      let sum = monthNumber + dayNumber;
+
+      document.write(`
+            <div class="block">
+               <div class="block__container">
+                  <p class="block__text">Номер місяця: ${monthNumber}</p>
+                  <p class="block__text">Номер дня: ${dayNumber}</p>
+                  <p class="block__text">Сума: ${sum}</p>
+               </div>
+            </div>
+         `);
+   </script>
+</body>
+
+</html>

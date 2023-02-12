@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ukr">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="../css/style.css">
+   <title>Завдання 0</title>
+</head>
+
+<body>
+
+   <main class="page">
+      <section class="block">
+         <div class="block__container">
+            <h1 class="block__title">Обов'язкове завдання 0</h1>
+            <div class="block__body">
+               <a href="../index.html" class="block__link">Повернутися до index.html</a>
+            </div>
+         </div>
+      </section>
+   </main>
+   <script>
+      let a, b, c, s;
+
+      a = parseFloat(prompt('Введіть значення змінної а', 0));
+      b = parseFloat(prompt('Введіть значення змінної b', 0));
+      c = parseFloat(prompt('Введіть значення змінної c', 0));
+
+      alert((s = a + 12 + b).toFixed(2));
+      alert((s = Math.sqrt((a + b) / (2 * a))).toFixed(2));
+      alert((s = Math.cbrt((a + b) * c)).toFixed(2));
+      alert((s = Math.sin(a / -b)).toFixed(2));
+   </script>
+</body>
+
+</html>
